@@ -12,8 +12,9 @@
 
     <!-- FontAwesome Kit -->
     <script src="https://kit.fontawesome.com/81d9a77ad0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="icon" type="image/png" href="computer_icon.png">
+    <link rel="icon" type="image/png" href="\src\assets\icons\computer_icon.png">
     <title>Angie S. Unda's Portfolio</title>
     <style>
         .img-circle {
@@ -27,46 +28,70 @@
     <div class="container shadow p-3 mb-5 bg-white rounded">
         <div class="jumbotron">
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 container-fluid">
                     <img src="basecamp-friends.jpg" class="img-fluid img-circle">
                 </div>
-                <div class="col-lg-9 col-sm-12">
-                    <h1 class="display-4">Angie S.Unda</h1>
-                    <p class="lead">Base Camp Coding Academy Student and Volunteer Coding Instructor</p>
+                <div class="col-lg-9 col-sm-12 display-block">
+                    <h1 class="display-3 container-fluid text-center">Angie S.Unda</h1>
+                    <p class="lead text-info container-fluid text-center">Full Stack Software Developer</p>
                     <hr class="my-4">
-                    <p>
-                        Skills and Languages: 
-                        </p>
-
-                        <p> Python, Django, HTML, CSS, JavaScript, Java, Spring, C#, ASP.Net, SQL, Git, Agile | English and Spanish</p>
-                        <a href="mailto:aunda@basecampcodingacademy.org"><button type="button" class="btn btn-outline-info">Email <i class="fas fa-envelope"></i></button></a>
-                        <a href="Angie S Unda Resume.pdf" target="_blank"><button type="button" class="btn btn-outline-info">Resume <i class="fas fa-file"></i></button></a> 
-                        <button onclick="window.location.href='https://www.linkedin.com/in/angieunda/'" type="button" class="btn btn-outline-info">LinkedIn <i class="fab fa-linkedin"></i></button> 
+                        <a href="mailto:angieunda101@gmail.com"><button type="button" class="btn btn-outline-info col">Email <i class="fas fa-envelope"></i></button></a>
+                        <a href="\src\assets\pdfs\ANGIE UNDA Resume.pdf"><button type="button" class="btn btn-outline-info col">Resume <i class="fas fa-file"></i></button></a> 
+                        <button onclick="window.location.href='https://www.github.com/ASoledadU'" type="button" class="btn btn-outline-info col">GitHub <i class="fa-brands fa-github"></i></button>
                 </div>
-
             </div>
+
         </div>
-        
+        <h1 class="text-primary text-info">About me</h1>
+        <div class="p-3 border border-dark">
+            <p>From a young age, I’ve been captivated by technology. My journey in tech began in high school, where I proudly served as an ambassador for the Information Technology vocational program during my studies at DeSoto County Career Tech West.</p> 
+            <p>Professionally, I have been fortunate to build a well-rounded foundation. My career began as an IT technician with Future Electronics, providing hands-on solutions to tech issues and learning the intricacies of hardware and software management. Later, I was able to share my skills, teaching the fundamentals of web development at Davidson Elementary School in Water Valley, MS. Most recently, I spent over three years with Cellular South, further honing my skills in a dynamic and fast-paced environment.</p> 
+            <p>Beyond my career, I am passionate about giving back to my community and fostering growth in others. I am constantly in pursuit of new knowledge, whether it’s exploring emerging technologies or nurturing my collection of houseplants. This pastime keeps me grounded and connected to nature and balance. I look forward to bringing my skills and enthusiasm to new challenges and collaborations.</p>
+        </div>
+        <hr class="my-5">
+
         <h1 class="text-primary text-info"> Projects</h1>
 <div class="card-columns mb-3">
-
 
             <div class="card border border-dark">
 
                 <div class="card-body">
-                    <h5 class="card-title">Ascent Attendance Showcase</h5>
-                    <h6 class="card-title">Django Web App</h6>
-                    <p class="card-text">Team project to demonstrate mastery of Django web framework by implemening various features</p>
+                    <h5 class="card-title">Library Inventory</h5>
+                    <h6 class="card-title">Django Web Application</h6>
+                    <p class="card-text">Developed a library management application in Django to manage book inventory for a small library.</p>
                     <ul class="card-text">
-                        <li>Increased fluency in creating web applications with class-based Django</li>
-                        <li>Collaborated with a partner to create an application to promote classroom functionality by tracking 
-                        the attendance</li>
-                        <li>Leveraged Agile techniques such as pair programming, continuous integration, and daily stand-ups</li>
-                        <li>Used GitHub to see class progress and issues from coding superviser</li>
-                        
+                        <li>Created models to represent library assets and transactions, including:
+                            Book model with attributes like title, author, publication date, genre, stock status, and description.
+                            Transaction model to track check-in/check-out actions with timestamps and book references.</li>
+                        <li>Implemented key functionalities to streamline borrowing and returning books:
+                            Added a borrow_book view to update stock status and display success or error messages based on availability.
+                            Built a return_book view to handle returns with messaging for successful or erroneous returns.</li>
+                        <li>Configured Django's messaging framework to provide users with real-time, context-sensitive alerts after interactions.</li>
                         <li>Code sample in relevant directory:
-                            <a class="text-info" href="https://github.com/ASoledadU/ascent/tree/master/attendance"
-                                target="_blank">https://github.com/ASoledadU/ascent/tree/master/attendance</a>
+                            <a class="text-info" href="https://github.com/ASoledadU/django-library"
+                                target="_blank">github.com/ASoledadU/django-library</a>
+                        </li>
+                    </ul>
+                    <small class="text-muted">
+                        November 2019
+                    </small>
+                </div>
+            </div>
+
+            <div class="card border border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Community Volunteer Sign Up Sheet</h5>
+                    <h6 class="card-title">Java Terminal Application</h6>
+                    <p class="card-text">Developed a terminal application to streamline volunteer sign-ups for churches, automating the paper-based interest form.</p>
+                    <ul class="card-text">
+                        <li>Built a user interface that captures volunteer interest data, mirroring the original paper form.</li>
+                        <li>Implemented data storage for long-term tracking of volunteer information:
+                            Stored user submissions persistently to maintain volunteer data between program executions.</li>
+                        <li>Exceeded requirements by developing a separate administrator application, allowing church staff to:
+                            Review volunteer interests sorted by categories to support efficient placement.</li>
+                        <li>Code sample in relevant directory:
+                            <a  class="text-info" href="https://github.com/ASoledadU/java-benchmark-volunteer-signup"
+                                target="_blank">github.com/ASoledadU/java-benchmark-volunteer-signup</a>
                         </li>
                     </ul>
                     <small class="text-muted">
@@ -86,11 +111,11 @@
                         <li>Independently made a unique and interesting way to learn how to demonstrate DOM manipulation</li>
                         <li>Hosted Website with Game:
                             <a class="text-info" href="https://asoledadu.github.io/Dwight-Shrute-Farm/"
-                                target="_blank">https://asoledadu.github.io/Dwight-Shrute-Farm/</a>
+                                target="_blank">asoledadu.github.io/Dwight-Shrute-Farm/</a>
                         </li>
                         <li>Code sample in relevant directory:
                             <a class="text-info" href="https://github.com/ASoledadU/Dwight-Shrute-Farm"
-                                target="_blank">https://github.com/ASoledadU/Dwight-Shrute-Farm</a>
+                                target="_blank">github.com/ASoledadU/Dwight-Shrute-Farm</a>
                         </li>
                     </ul>
                     <small class="text-muted">
@@ -113,7 +138,7 @@
                         <li>Was able to cascade my knowledge of Python to C#</li>
                         <li>Code sample in relevant directory:
                             <a  class="text-info" href="https://github.com/ASoledadU/DogStoreTranslation"
-                                target="_blank">https://github.com/ASoledadU/DogStoreTranslation</a>
+                                target="_blank">github.com/ASoledadU/DogStoreTranslation</a>
                         </li>
                     </ul>
                     <small class="text-muted">
@@ -121,21 +146,23 @@
                     </small>
                 </div>
             </div>
-           
+
             <div class="card border border-dark">
+
                 <div class="card-body">
-                    <h5 class="card-title">Community Volunteer Sign Up Sheet</h5>
-                    <h6 class="card-title">Java Terminal Application</h6>
-                    <p class="card-text">Independent assessment using Java to demonstrate the ability to collect and 
-                    store data that previously was on paper.</p>
+                    <h5 class="card-title">Ascent Attendance Showcase</h5>
+                    <h6 class="card-title">Django Web Application</h6>
+                    <p class="card-text">Team project to demonstrate mastery of Django web framework by implemening various features</p>
                     <ul class="card-text">
-                        <li>Created an application for users to submit a volunteer form</li>
-                        <li>Independently drove my acquisition by referencing the book "Head First Java"</li>
-                        <li>Demonstrated problem solving with object oriented programming</li>
-                        <li>Was able to cascade my knowledge of C# to Java</li>
+                        <li>Increased fluency in creating web applications with class-based Django</li>
+                        <li>Collaborated with a partner to create an application to promote classroom functionality by tracking 
+                        the attendance</li>
+                        <li>Leveraged Agile techniques such as pair programming, continuous integration, and daily stand-ups</li>
+                        <li>Used GitHub to see class progress and issues from coding superviser</li>
+                        
                         <li>Code sample in relevant directory:
-                            <a  class="text-info" href="https://github.com/ASoledadU/java-benchmark-volunteer-signup"
-                                target="_blank">https://github.com/ASoledadU/java-benchmark-volunteer-signup</a>
+                            <a class="text-info" href="https://github.com/ASoledadU/ascent"
+                                target="_blank">github.com/ASoledadU/ascent</a>
                         </li>
                     </ul>
                     <small class="text-muted">
@@ -195,48 +222,7 @@
 </div>
             </div>
 
- <div class="card border border-dark">
-                <div class="card-body">
-                    <h5 class="card-title">HTML/CSS Star Wars Introduction</h5>
-                    <p class="card-text">Translated the Star Wars introduction into HTML and CSS, and shared my
-                        experience of the language through a <a
-                            class="text-info" href="https://dev.to/asoledadu/star-wars-intro-explanation-yes-again-4hk5"
-                            target="_blank">blog post on DEV.to</a> 
-                    </p>
-                    <p class="card-text"><small class="text-muted">December 2019</small></p>
-                </div>
-            </div>
-
         </div>
-        <h1 class="text-primary text-info">About Me</h1>
-        <div class="p-3 border border-dark mb-4">
-            <p>I am an aspiring Junior Software Developer, originally from Quito, Ecuador. After traveling all over the USA,
-             I found home in Horn Lake, Mississippi. I was the ambassador for Desoto County Career Tech West and am currently 
-             responsible for an after school program where my team teaches 5th graders how to code. In my free time, I like to 
-             go to developer meet ups, cook for my loved ones, play my instruments, or even just enjoy the company of my furry 
-             and scaley pets.
-            </p>
-        </div>
-        <h1 class="text-primary text-info">Work Experience</h1>
-        <div class="p-3 border border-dark">
-                    <h5>Intern | Morgan White Group</h5>
-            <p class="mb-0"> March 2020</p>
-            <ul>
-                <li>Engaged in collaborative team sprints, ticket completions, and company meetings.</li>
-                <li>Advanced C# knowledge with discussions of MVC, Entity, Guids, and Clean Architecture.</li>
-            </ul>
-            <h5>Manager | Davidson Elementary Coding Program</h5>
-            <p class="mb-0"> September 2019 - Present</p>
-            <ul>
-                <li>Design and maintain a weekly programming curriculum for 15+ 5th-grade students.</li>
-                <li>Collaborate with co-instructors to create lesson plans and measure student growth.</li>
-            </ul>
-            <h5>I.T. Tech Support Specialist | Future Electronics</h5>
-            <p class="mb-0"> October 2018 - June 2019</p>
-            <ul>
-                <li>Maintained computer and printer software and hardware.</li>
-                <li>Overlooked main software that organized all the packages in and out of the building</li>
-            </ul>
         </div>
     </div>
     <!-- Bootstrap JS -->
